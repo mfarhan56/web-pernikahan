@@ -1375,7 +1375,7 @@
           <i class="fas fa-lock"></i>
         </div>
         <div class="lock-count" id="lockCount">0</div>
-        <div class="lock-message">Kunci Doa untuk Kebahagiaan Dede & Eva</div>
+        <div class="lock-message">Kunci Doa untuk Kebahagiaan Eva & Dede</div>
       </div>
     </div>
   </section>
@@ -1384,9 +1384,9 @@
   <section class="closing">
     <div class="container">
       <div class="ornament"><div class="ornament-line"></div><div class="ornament-dot"></div><div class="ornament-line"></div></div>
-      <h2>Dede,A.Md & Eva,SE</h2>
+      <h2>Eva & Dede</h2>
       <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
-      <div class="hashtag">Eva,SE & Dede A.Md</div>
+      <div class="hashtag">Eva & Dede </div>
       <div class="ornament" style="margin-top: 30px;"><div class="ornament-line"></div><i class="fas fa-heart" style="color: var(--gold); margin: 0 10px; font-size: 14px;"></i><div class="ornament-line"></div></div>
       <p style="margin-top: 25px; font-size: 11px; color: var(--gold-dark);">Dengan cinta dan kebahagiaan yang abadi • Juni 2026</p>
     </div>
@@ -1618,7 +1618,7 @@
     if (showQrisBtn) {
       showQrisBtn.addEventListener('click', () => {
         if(giftInfo) { giftInfo.style.display = 'block';
-        giftInfo.innerHTML = `<div style="text-align:center;"><i class="fas fa-qrcode" style="font-size:60px;color:var(--gold);margin-bottom:10px;"></i><p>Scan QR Code:</p><div style="background:white;padding:10px;border-radius:15px;display:inline-block;"><img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=QRIS-DEDE-EVA-2026" alt="QRIS" style="width:120px;"></div><p style="margin-top:10px; font-size:11px;">Atas nama: Dede & Eva,SE</p></div>`; }
+        giftInfo.innerHTML = `<div style="text-align:center;"><i class="fas fa-qrcode" style="font-size:60px;color:var(--gold);margin-bottom:10px;"></i><p>Scan QR Code:</p><div style="background:white;padding:10px;border-radius:15px;display:inline-block;"><img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=QRIS-DEDE-EVA-2026" alt="QRIS" style="width:120px;"></div><p style="margin-top:10px; font-size:11px;">Atas nama: Eva & Dede </p></div>`; }
       });
     }
     if (showBankBtn) {
@@ -1717,7 +1717,7 @@
       if (isPlaying) return;
       isPlaying = true;
       const msg = new SpeechSynthesisUtterance();
-      msg.text = 'Assalamualaikum warahmatullahi wabarakatuh. Selamat datang di undangan pernikahan kami, Dede dan Eva. Terima kasih atas doa dan restu yang telah diberikan. Semoga Allah selalu melimpahkan keberkahan untuk kita semua.';
+      msg.text = 'Assalamualaikum warahmatullahi wabarakatuh. Selamat datang di undangan pernikahan kami, Eva dan Dede. Terima kasih atas doa dan restu yang telah diberikan. Semoga Allah selalu melimpahkan keberkahan untuk kita semua.';
       msg.lang = 'id-ID';
       msg.rate = 0.85;
       msg.pitch = 1.05;
@@ -1756,7 +1756,7 @@
       lockIcon.innerHTML = '<i class="fas fa-lock" style="color: var(--gold-light);"></i>';
       lockIcon.style.animation = 'loveLockPop 0.5s ease';
       setTimeout(() => { lockIcon.style.animation = ''; }, 500);
-      showToast('💝 Terima kasih telah mengunci doa untuk Dede & Eva!');
+      showToast('💝 Terima kasih telah mengunci doa untuk Eva & Dede!');
     });
   }
 
@@ -1818,7 +1818,7 @@
     setTimeout(() => {
       const toast = document.createElement('div');
       toast.className = 'toast-notification';
-      toast.innerHTML = '🌸 Selamat datang di undangan pernikahan Dede & Eva,SE 🌸';
+      toast.innerHTML = '🌸 Selamat datang di undangan pernikahan Eva & Dede 🌸';
       document.body.appendChild(toast);
       setTimeout(() => toast.remove(), 3000);
     }, 500);
