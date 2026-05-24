@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
 <title>Undangan Pernikahan | Eva,SE & Dede A.Md — Cinta Abadi</title>
 <meta name="description" content="Dengan penuh kebahagiaan, kami mengundang Anda dalam momen sakral pernikahan Eva,SE & Dede,A.Md">
 <meta name="theme-color" content="#1a1208">
@@ -988,6 +989,7 @@
     animation: fadeInOut 3s ease forwards;
   }
 
+  /* ========== MEDIA QUERIES UNTUK RESPONSIF HP (DITAMBAHKAN TANPA MENGURANGI APAPUN) ========== */
   @media (max-width: 700px) {
     section { padding: 70px 18px; }
     .cd-number { font-size: 44px; }
@@ -999,6 +1001,173 @@
     .voice-greeting { left: 90px; }
     .theme-toggle { left: 20px; }
     .music-btn { right: 20px; }
+  }
+
+  /* Tambahan media query untuk layar lebih kecil (HP) */
+  @media (max-width: 550px) {
+    .cover-card {
+      padding: 35px 20px 45px;
+      width: 95%;
+    }
+    .name-big {
+      font-size: clamp(48px, 12vw, 68px);
+      letter-spacing: 2px;
+    }
+    .ampersand {
+      font-size: 50px;
+    }
+    .name-sub {
+      font-size: 11px;
+      letter-spacing: 3px;
+    }
+    .verse-text {
+      font-size: 13px;
+      padding: 10px 12px;
+    }
+    .btn-open {
+      padding: 12px 30px;
+      font-size: 13px;
+      letter-spacing: 3px;
+    }
+    .section-title {
+      font-size: 12px;
+      letter-spacing: 5px;
+      margin-bottom: 35px;
+    }
+    .section-title:after {
+      font-size: 18px;
+    }
+    .countdown-boxes {
+      gap: 12px;
+    }
+    .cd-box {
+      padding: 12px 12px;
+      min-width: 70px;
+    }
+    .cd-number {
+      font-size: 32px;
+    }
+    .cd-label {
+      font-size: 10px;
+    }
+    .events-grid {
+      gap: 20px;
+    }
+    .event-card {
+      padding: 30px 18px;
+      border-radius: 45px;
+    }
+    .event-icon {
+      font-size: 45px;
+    }
+    .event-type {
+      font-size: 13px;
+      letter-spacing: 3px;
+    }
+    .event-date {
+      font-size: 28px;
+      margin: 12px 0;
+    }
+    .location-card {
+      padding: 25px 18px;
+      border-radius: 45px;
+    }
+    .location-card h3 {
+      font-size: 20px;
+    }
+    .location-card p {
+      font-size: 13px;
+    }
+    .map-btn {
+      padding: 10px 25px;
+      font-size: 13px;
+    }
+    .couple-info {
+      padding: 25px 20px;
+      border-radius: 50px;
+    }
+    .couple-names {
+      font-size: 28px;
+    }
+    .couple-parents {
+      font-size: 13px;
+    }
+    .love-lock-container {
+      padding: 20px;
+    }
+    .love-lock-icon {
+      font-size: 45px;
+    }
+    .lock-count {
+      font-size: 20px;
+    }
+    .closing h2 {
+      font-size: 42px;
+    }
+    .closing p {
+      font-size: 14px;
+      padding: 0 15px;
+    }
+    .hashtag {
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+    .music-btn, .theme-toggle, .floating-action-btn, .voice-greeting {
+      width: 50px;
+      height: 50px;
+      font-size: 22px;
+    }
+    .floating-action-btn { right: 75px; }
+    .voice-greeting { left: 75px; }
+    .theme-toggle { left: 15px; }
+    .music-btn { right: 15px; }
+    .back-to-top {
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+      bottom: 95px;
+      right: 15px;
+    }
+    .save-calendar-btn {
+      padding: 8px 16px;
+      font-size: 11px;
+    }
+    .clock-time {
+      font-size: 22px;
+    }
+    .weather-icon {
+      font-size: 32px;
+    }
+    .weather-temp {
+      font-size: 20px;
+    }
+  }
+
+  /* Untuk layar sangat kecil (320px ke bawah) */
+  @media (max-width: 380px) {
+    .cd-box {
+      padding: 8px 8px;
+      min-width: 60px;
+    }
+    .cd-number {
+      font-size: 26px;
+    }
+    .cd-label {
+      font-size: 8px;
+    }
+    .event-date {
+      font-size: 24px;
+    }
+    .couple-names {
+      font-size: 24px;
+    }
+    .closing h2 {
+      font-size: 34px;
+    }
+    .section-title {
+      font-size: 10px;
+      letter-spacing: 3px;
+    }
   }
 </style>
 </head>
@@ -1073,7 +1242,7 @@
       <div class="section-title reveal-up">Momen Bahagia</div>
       <div class="reveal-zoom">
         <div class="anim-stage">
-          <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" width="100%" style="display:block">
+          <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" width="100%" style="display:block; height:auto;">
             <defs>
               <radialGradient id="skyg" cx="50%" cy="30%" r="70%">
                 <stop offset="0%" stop-color="#1a1208"/>
@@ -1867,3 +2036,4 @@
 </script>
 </body>
 </html>
+```
