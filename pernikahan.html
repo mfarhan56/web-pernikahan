@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -36,6 +35,8 @@
     color: var(--gold-light);
     cursor: default;
     transition: background 0.3s ease, color 0.3s ease;
+    width: 100%;
+    max-width: 100%;
   }
 
   body.light-mode {
@@ -176,15 +177,16 @@
     justify-content: center;
     position: relative;
     z-index: 15;
-    padding: 24px;
+    padding: 16px;
   }
   .cover-card {
-    width: min(600px, 92%);
+    width: 100%;
+    max-width: 500px;
     background: rgba(17, 17, 17, 0.92);
     backdrop-filter: blur(20px);
-    border-radius: 60px;
+    border-radius: 40px;
     border: 1px solid rgba(200, 168, 75, 0.4);
-    padding: 50px 35px 60px;
+    padding: 30px 20px 40px;
     text-align: center;
     box-shadow: 0 35px 50px -18px rgba(0, 0, 0, 0.5);
     animation: coverPop 0.8s ease-out;
@@ -198,54 +200,55 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
   }
   .ornament-line {
-    width: 70px;
-    height: 2px;
+    width: 50px;
+    height: 1.5px;
     background: linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--gold), transparent);
   }
   .ornament-dot {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background: var(--gold);
     border-radius: 50%;
     box-shadow: 0 0 5px var(--gold);
   }
   .bismillah {
-    font-size: 14px;
-    letter-spacing: 3px;
+    font-size: 12px;
+    letter-spacing: 2px;
     color: var(--gold-light);
   }
   .verse-text {
-    font-size: 16px;
+    font-size: 13px;
     font-style: italic;
     background: rgba(200, 168, 75, 0.1);
-    border-radius: 50px;
-    padding: 14px 20px;
-    margin: 20px 0;
-    line-height: 1.6;
+    border-radius: 40px;
+    padding: 12px 16px;
+    margin: 15px 0;
+    line-height: 1.5;
     color: var(--gold-light);
   }
   .name-big {
-    font-size: clamp(68px, 16vw, 100px);
+    font-size: 48px;
     font-weight: 500;
     font-family: 'Cormorant Garamond', serif;
     color: var(--gold-light);
-    letter-spacing: 4px;
+    letter-spacing: 2px;
   }
   .name-sub {
-    font-size: 14px;
-    letter-spacing: 6px;
-    margin-bottom: 10px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
     color: var(--gold-dark);
   }
   .ampersand {
-    font-size: 80px;
+    font-size: 50px;
     color: var(--gold);
     display: inline-block;
-    margin: 10px 0;
+    margin: 5px 0;
     animation: heartBeat 1.5s infinite;
   }
   @keyframes heartBeat {
@@ -255,21 +258,21 @@
   .btn-open {
     background: linear-gradient(105deg, #C8A84B, #8B6914);
     border: none;
-    padding: 16px 50px;
+    padding: 12px 30px;
     font-family: 'Cinzel', serif;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     color: white;
     border-radius: 50px;
     cursor: pointer;
-    margin-top: 35px;
+    margin-top: 25px;
     transition: 0.3s;
     box-shadow: 0 10px 25px -8px rgba(200, 168, 75, 0.4);
   }
   .btn-open:hover {
     transform: scale(1.02);
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     background: linear-gradient(105deg, #D4B85C, #9A7520);
   }
 
@@ -286,27 +289,28 @@
     opacity: 1;
   }
   section {
-    padding: 90px 24px;
+    padding: 50px 16px;
     position: relative;
   }
   .container {
-    max-width: 850px;
+    max-width: 600px;
     margin: 0 auto;
+    width: 100%;
   }
   .section-title {
     text-align: center;
     font-family: 'Cinzel', serif;
-    font-size: 14px;
-    letter-spacing: 8px;
+    font-size: 11px;
+    letter-spacing: 4px;
     color: var(--gold);
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .section-title:after {
     content: '✧ ✿ ✧';
     display: block;
-    font-size: 22px;
-    margin-top: 12px;
+    font-size: 16px;
+    margin-top: 10px;
     color: var(--gold);
   }
 
@@ -314,35 +318,35 @@
   .countdown-boxes {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 12px;
     flex-wrap: wrap;
   }
   .cd-box {
     background: rgba(17, 17, 17, 0.94);
     backdrop-filter: blur(10px);
-    padding: 25px 28px;
-    border-radius: 60px;
-    min-width: 110px;
+    padding: 12px 10px;
+    border-radius: 30px;
+    min-width: 70px;
     text-align: center;
     box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(200, 168, 75, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
   }
   .cd-box:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     box-shadow: 0 20px 35px -12px rgba(200, 168, 75, 0.2);
     border-color: var(--gold);
   }
   .cd-number {
-    font-size: 58px;
+    font-size: 32px;
     font-weight: 700;
     color: var(--gold-light);
     font-family: 'Cinzel', serif;
     line-height: 1;
   }
   .cd-label {
-    font-size: 14px;
-    margin-top: 8px;
+    font-size: 9px;
+    margin-top: 5px;
     font-weight: 500;
     color: var(--gold-dark);
   }
@@ -350,10 +354,10 @@
   /* ========== SVG ANIMATION SECTION ========== */
   .anim-stage {
     background: linear-gradient(180deg, #120F0A 0%, #0A0805 100%);
-    border-radius: 48px;
-    padding: 20px;
+    border-radius: 30px;
+    padding: 10px;
     border: 1px solid rgba(200,168,75,0.3);
-    margin: 20px 0;
+    margin: 15px 0;
     box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5);
     transition: transform 0.4s, box-shadow 0.4s;
   }
@@ -363,11 +367,11 @@
   }
   .anim-caption {
     text-align: center;
-    margin-top: 24px;
+    margin-top: 15px;
     font-style: italic;
-    font-size: 18px;
+    font-size: 13px;
     color: var(--gold-light);
-    line-height: 1.8;
+    line-height: 1.5;
   }
 
   /* SVG Keyframes */
@@ -407,28 +411,28 @@
 
   /* Events */
   .events-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   .event-card {
     background: rgba(17, 17, 17, 0.94);
     backdrop-filter: blur(10px);
-    border-radius: 60px;
-    padding: 40px 25px;
+    border-radius: 35px;
+    padding: 25px 15px;
     text-align: center;
     transition: 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
     border: 1px solid rgba(200, 168, 75, 0.3);
   }
   .event-card:hover {
-    transform: translateY(-12px) scale(1.02);
+    transform: translateY(-8px) scale(1.01);
     border-color: var(--gold);
     box-shadow: 0 20px 40px -12px rgba(200,168,75,0.2);
   }
   .event-icon {
-    font-size: 58px;
+    font-size: 40px;
     color: var(--gold);
-    margin-bottom: 18px;
+    margin-bottom: 12px;
     transition: transform 0.3s;
   }
   .event-card:hover .event-icon {
@@ -436,15 +440,15 @@
   }
   .event-type {
     font-family: 'Cinzel', serif;
-    font-size: 16px;
-    letter-spacing: 4px;
+    font-size: 13px;
+    letter-spacing: 3px;
     color: var(--gold);
   }
   .event-date {
-    font-size: 42px;
+    font-size: 28px;
     font-weight: 600;
     color: var(--gold-light);
-    margin: 18px 0;
+    margin: 12px 0;
     font-family: 'Cormorant Garamond', serif;
   }
 
@@ -452,35 +456,42 @@
   .location-card {
     background: rgba(17, 17, 17, 0.88);
     backdrop-filter: blur(10px);
-    border-radius: 60px;
-    padding: 35px;
-    margin-bottom: 30px;
+    border-radius: 35px;
+    padding: 25px 18px;
+    margin-bottom: 20px;
     text-align: center;
     border: 1px solid rgba(200,168,75,0.3);
     transition: 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
   }
   .location-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     border-color: var(--gold);
     box-shadow: 0 15px 35px -12px rgba(200,168,75,0.15);
+  }
+  .location-card h3 {
+    font-size: 18px;
+    margin: 12px 0;
+  }
+  .location-card p {
+    font-size: 13px;
   }
   .map-btn {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     background: rgba(200,168,75,0.15);
     border-radius: 50px;
-    padding: 12px 35px;
+    padding: 8px 20px;
     color: var(--gold-light);
     text-decoration: none;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 15px;
     transition: 0.25s;
-    font-size: 15px;
+    font-size: 12px;
     border: 1px solid var(--gold-dark);
   }
   .map-btn:hover {
-    gap: 18px;
+    gap: 12px;
     background: rgba(200,168,75,0.3);
     border-color: var(--gold);
   }
@@ -489,10 +500,10 @@
   .couple-info {
     background: rgba(17, 17, 17, 0.92);
     backdrop-filter: blur(12px);
-    border-radius: 70px;
-    padding: 35px 30px;
+    border-radius: 40px;
+    padding: 25px 20px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     border: 1px solid rgba(200, 168, 75, 0.4);
     transition: 0.4s;
   }
@@ -502,15 +513,15 @@
     box-shadow: 0 15px 35px -12px rgba(200,168,75,0.15);
   }
   .couple-names {
-    font-size: 38px;
+    font-size: 24px;
     font-family: 'Cormorant Garamond', serif;
     color: var(--gold-light);
     font-weight: 600;
   }
   .couple-parents {
-    font-size: 16px;
-    margin-top: 18px;
-    line-height: 1.8;
+    font-size: 12px;
+    margin-top: 15px;
+    line-height: 1.6;
     color: var(--gold-dark);
   }
 
@@ -518,39 +529,53 @@
   .closing {
     text-align: center;
     background: linear-gradient(135deg, #111, #0a0805);
-    border-radius: 70px 70px 0 0;
-    margin-top: 40px;
-    padding-bottom: 70px;
+    border-radius: 50px 50px 0 0;
+    margin-top: 30px;
+    padding-bottom: 50px;
+  }
+  .closing h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--gold-light);
+    font-family: 'Cormorant Garamond', serif;
+    margin: 20px 0;
+  }
+  .closing p {
+    max-width: 550px;
+    margin: 20px auto;
+    line-height: 1.7;
+    font-size: 13px;
+    padding: 0 15px;
   }
   .hashtag {
     display: inline-block;
     border-top: 2px solid var(--gold);
-    padding-top: 14px;
-    letter-spacing: 4px;
+    padding-top: 10px;
+    letter-spacing: 2px;
     font-family: 'Cinzel', serif;
-    font-size: 16px;
-    margin-top: 20px;
+    font-size: 11px;
+    margin-top: 15px;
     transition: 0.3s;
   }
   .hashtag:hover {
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     color: var(--gold-light);
   }
 
   /* Music Button */
   .music-btn {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 70px;
-    height: 70px;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
     background: rgba(17, 17, 17, 0.94);
     backdrop-filter: blur(16px);
     border-radius: 50%;
     display: none;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
+    font-size: 22px;
     color: var(--gold);
     cursor: pointer;
     z-index: 200;
@@ -575,8 +600,8 @@
   /* Scroll Reveal */
   .reveal-up {
     opacity: 0;
-    transform: translateY(50px);
-    transition: 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.2);
+    transform: translateY(30px);
+    transition: 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.2);
   }
   .reveal-up.visible {
     opacity: 1;
@@ -584,8 +609,8 @@
   }
   .reveal-left {
     opacity: 0;
-    transform: translateX(-60px);
-    transition: 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.2);
+    transform: translateX(-30px);
+    transition: 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.2);
   }
   .reveal-left.visible {
     opacity: 1;
@@ -593,8 +618,8 @@
   }
   .reveal-right {
     opacity: 0;
-    transform: translateX(60px);
-    transition: 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.2);
+    transform: translateX(30px);
+    transition: 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.2);
   }
   .reveal-right.visible {
     opacity: 1;
@@ -602,8 +627,8 @@
   }
   .reveal-zoom {
     opacity: 0;
-    transform: scale(0.92);
-    transition: 0.9s cubic-bezier(0.2, 0.9, 0.4, 1.2);
+    transform: scale(0.96);
+    transition: 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.2);
   }
   .reveal-zoom.visible {
     opacity: 1;
@@ -611,8 +636,8 @@
   }
   .reveal-pop {
     opacity: 0;
-    transform: scale(0.85);
-    transition: 0.6s cubic-bezier(0.34, 1.2, 0.64, 1);
+    transform: scale(0.9);
+    transition: 0.5s cubic-bezier(0.34, 1.2, 0.64, 1);
   }
   .reveal-pop.visible {
     opacity: 1;
@@ -620,22 +645,13 @@
   }
   .reveal-rotate-up {
     opacity: 0;
-    transform: translateY(40px) rotateX(15deg);
-    transition: 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.2);
+    transform: translateY(30px) rotateX(10deg);
+    transition: 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.2);
   }
   .reveal-rotate-up.visible {
     opacity: 1;
     transform: translateY(0) rotateX(0);
   }
-
-  .cd-box:nth-child(1) { transition-delay: 0.05s; }
-  .cd-box:nth-child(2) { transition-delay: 0.15s; }
-  .cd-box:nth-child(3) { transition-delay: 0.25s; }
-  .cd-box:nth-child(4) { transition-delay: 0.35s; }
-  .event-card:nth-child(1) { transition-delay: 0.1s; }
-  .event-card:nth-child(2) { transition-delay: 0.25s; }
-  .location-card:nth-child(1) { transition-delay: 0.1s; }
-  .location-card:nth-child(2) { transition-delay: 0.25s; }
 
   .scroll-progress {
     position: fixed;
@@ -651,10 +667,10 @@
 
   .back-to-top {
     position: fixed;
-    bottom: 110px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
+    bottom: 80px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
     background: rgba(17, 17, 17, 0.9);
     backdrop-filter: blur(10px);
     border-radius: 50%;
@@ -662,7 +678,7 @@
     align-items: center;
     justify-content: center;
     color: var(--gold);
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     z-index: 199;
     border: 1px solid var(--gold-dark);
@@ -683,19 +699,11 @@
     color: var(--gold-light);
   }
 
-  @keyframes cardFloat {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-5px); }
-  }
-  .event-card.visible, .location-card.visible, .couple-info.visible {
-    animation: cardFloat 3s ease-in-out infinite;
-  }
-
   /* ========== FITUR TAMBAHAN ========== */
   .confetti {
     position: fixed;
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background: linear-gradient(135deg, #C8A84B, #F0D98A, #FFD700);
     top: -10px;
     z-index: 9999;
@@ -736,38 +744,38 @@
   /* Gift Section */
   .gift-section {
     background: linear-gradient(135deg, #111, #1a1508);
-    border-radius: 60px;
-    padding: 40px 30px;
+    border-radius: 40px;
+    padding: 25px 20px;
     text-align: center;
     border: 1px solid rgba(200,168,75,0.3);
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .gift-icon {
-    font-size: 60px;
-    margin-bottom: 15px;
+    font-size: 45px;
+    margin-bottom: 10px;
   }
   .gift-title {
     font-family: 'Cinzel', serif;
-    font-size: 18px;
-    letter-spacing: 3px;
+    font-size: 14px;
+    letter-spacing: 2px;
     color: var(--gold);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .gift-desc {
-    font-size: 14px;
+    font-size: 11px;
     color: var(--gold-dark);
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
   .gift-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
   }
   .gift-btn {
     background: rgba(200,168,75,0.15);
     border: 1px solid var(--gold-dark);
-    padding: 12px 25px;
+    padding: 8px 18px;
     border-radius: 50px;
     color: var(--gold-light);
     font-family: 'Quicksand', sans-serif;
@@ -775,7 +783,8 @@
     transition: 0.3s;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    font-size: 11px;
   }
   .gift-btn:hover {
     background: rgba(200,168,75,0.3);
@@ -783,10 +792,10 @@
     transform: translateY(-3px);
   }
   .gift-info {
-    margin-top: 25px;
-    padding: 20px;
+    margin-top: 15px;
+    padding: 15px;
     background: rgba(0,0,0,0.4);
-    border-radius: 40px;
+    border-radius: 30px;
     animation: fadeSlideIn 0.5s ease;
   }
   @keyframes fadeSlideIn {
@@ -798,7 +807,7 @@
   .save-calendar-btn {
     background: rgba(200,168,75,0.15);
     border: 1px solid var(--gold-dark);
-    padding: 12px 25px;
+    padding: 8px 18px;
     border-radius: 50px;
     color: var(--gold-light);
     font-family: 'Quicksand', sans-serif;
@@ -806,8 +815,9 @@
     transition: 0.3s;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 8px;
+    margin-top: 15px;
+    font-size: 11px;
   }
   .save-calendar-btn:hover {
     background: rgba(200,168,75,0.3);
@@ -818,47 +828,47 @@
   /* Live Clock & Weather */
   .live-clock {
     text-align: center;
-    margin: 20px 0;
-    padding: 15px;
+    margin: 15px 0;
+    padding: 12px;
     background: rgba(0,0,0,0.3);
-    border-radius: 50px;
+    border-radius: 40px;
     font-family: 'Cinzel', serif;
   }
   .clock-time {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
     color: var(--gold-light);
   }
   .clock-date {
-    font-size: 14px;
+    font-size: 11px;
     color: var(--gold-dark);
     margin-top: 5px;
   }
   .weather-widget {
     text-align: center;
-    margin: 20px 0;
-    padding: 15px;
+    margin: 15px 0;
+    padding: 12px;
     background: rgba(0,0,0,0.3);
-    border-radius: 50px;
+    border-radius: 40px;
   }
   .weather-icon {
-    font-size: 40px;
+    font-size: 32px;
   }
   .weather-temp {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
   }
 
   /* Love Lock */
   .love-lock-container {
     text-align: center;
-    margin: 30px 0;
-    padding: 30px;
+    margin: 20px 0;
+    padding: 20px;
     background: rgba(0,0,0,0.3);
-    border-radius: 60px;
+    border-radius: 40px;
   }
   .love-lock-icon {
-    font-size: 60px;
+    font-size: 45px;
     cursor: pointer;
     transition: 0.3s;
     color: var(--gold);
@@ -867,12 +877,12 @@
     transform: scale(1.1);
   }
   .lock-count {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 8px;
   }
   .lock-message {
-    font-size: 12px;
+    font-size: 10px;
     color: var(--gold-dark);
     margin-top: 5px;
   }
@@ -880,17 +890,17 @@
   /* Theme Toggle & Floating Buttons */
   .theme-toggle {
     position: fixed;
-    bottom: 30px;
-    left: 30px;
-    width: 55px;
-    height: 55px;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
     background: rgba(17, 17, 17, 0.94);
     backdrop-filter: blur(16px);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 22px;
     color: var(--gold);
     cursor: pointer;
     z-index: 200;
@@ -903,17 +913,17 @@
   }
   .floating-action-btn {
     position: fixed;
-    bottom: 30px;
-    right: 120px;
-    width: 55px;
-    height: 55px;
+    bottom: 20px;
+    right: 80px;
+    width: 50px;
+    height: 50px;
     background: rgba(17, 17, 17, 0.94);
     backdrop-filter: blur(16px);
     border-radius: 50%;
     display: none;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 22px;
     color: var(--gold);
     cursor: pointer;
     z-index: 200;
@@ -929,17 +939,17 @@
   }
   .voice-greeting {
     position: fixed;
-    bottom: 30px;
-    left: 100px;
-    width: 55px;
-    height: 55px;
+    bottom: 20px;
+    left: 80px;
+    width: 50px;
+    height: 50px;
     background: rgba(17, 17, 17, 0.94);
     backdrop-filter: blur(16px);
     border-radius: 50%;
     display: none;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 22px;
     color: var(--gold);
     cursor: pointer;
     z-index: 200;
@@ -976,197 +986,55 @@
   /* Toast Notification */
   .toast-notification {
     position: fixed;
-    bottom: 120px;
-    right: 25px;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
     background: rgba(0,0,0,0.85);
     backdrop-filter: blur(10px);
     color: #F0D98A;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 50px;
-    font-size: 13px;
+    font-size: 11px;
     z-index: 10000;
     border: 1px solid #C8A84B;
     animation: fadeInOut 3s ease forwards;
+    white-space: nowrap;
   }
 
-  /* ========== MEDIA QUERIES UNTUK RESPONSIF HP (DITAMBAHKAN TANPA MENGURANGI APAPUN) ========== */
-  @media (max-width: 700px) {
-    section { padding: 70px 18px; }
-    .cd-number { font-size: 44px; }
-    .cd-box { padding: 18px 20px; min-width: 85px; }
-    .event-date { font-size: 34px; }
-    .anim-stage { padding: 10px; }
-    .anim-caption { font-size: 14px; }
-    .floating-action-btn { right: 100px; }
-    .voice-greeting { left: 90px; }
-    .theme-toggle { left: 20px; }
-    .music-btn { right: 20px; }
-  }
-
-  /* Tambahan media query untuk layar lebih kecil (HP) */
-  @media (max-width: 550px) {
+  @media (min-width: 768px) {
     .cover-card {
-      padding: 35px 20px 45px;
-      width: 95%;
+      max-width: 550px;
+      padding: 50px 35px 60px;
     }
     .name-big {
-      font-size: clamp(48px, 12vw, 68px);
-      letter-spacing: 2px;
+      font-size: 68px;
     }
     .ampersand {
-      font-size: 50px;
-    }
-    .name-sub {
-      font-size: 11px;
-      letter-spacing: 3px;
-    }
-    .verse-text {
-      font-size: 13px;
-      padding: 10px 12px;
-    }
-    .btn-open {
-      padding: 12px 30px;
-      font-size: 13px;
-      letter-spacing: 3px;
-    }
-    .section-title {
-      font-size: 12px;
-      letter-spacing: 5px;
-      margin-bottom: 35px;
-    }
-    .section-title:after {
-      font-size: 18px;
-    }
-    .countdown-boxes {
-      gap: 12px;
+      font-size: 80px;
     }
     .cd-box {
-      padding: 12px 12px;
-      min-width: 70px;
+      padding: 20px 20px;
+      min-width: 90px;
     }
     .cd-number {
-      font-size: 32px;
-    }
-    .cd-label {
-      font-size: 10px;
+      font-size: 48px;
     }
     .events-grid {
-      gap: 20px;
+      flex-direction: row;
+      gap: 25px;
     }
     .event-card {
-      padding: 30px 18px;
-      border-radius: 45px;
-    }
-    .event-icon {
-      font-size: 45px;
-    }
-    .event-type {
-      font-size: 13px;
-      letter-spacing: 3px;
+      flex: 1;
+      padding: 35px 20px;
     }
     .event-date {
-      font-size: 28px;
-      margin: 12px 0;
-    }
-    .location-card {
-      padding: 25px 18px;
-      border-radius: 45px;
-    }
-    .location-card h3 {
-      font-size: 20px;
-    }
-    .location-card p {
-      font-size: 13px;
-    }
-    .map-btn {
-      padding: 10px 25px;
-      font-size: 13px;
-    }
-    .couple-info {
-      padding: 25px 20px;
-      border-radius: 50px;
-    }
-    .couple-names {
-      font-size: 28px;
-    }
-    .couple-parents {
-      font-size: 13px;
-    }
-    .love-lock-container {
-      padding: 20px;
-    }
-    .love-lock-icon {
-      font-size: 45px;
-    }
-    .lock-count {
-      font-size: 20px;
-    }
-    .closing h2 {
-      font-size: 42px;
-    }
-    .closing p {
-      font-size: 14px;
-      padding: 0 15px;
-    }
-    .hashtag {
-      font-size: 12px;
-      letter-spacing: 2px;
-    }
-    .music-btn, .theme-toggle, .floating-action-btn, .voice-greeting {
-      width: 50px;
-      height: 50px;
-      font-size: 22px;
-    }
-    .floating-action-btn { right: 75px; }
-    .voice-greeting { left: 75px; }
-    .theme-toggle { left: 15px; }
-    .music-btn { right: 15px; }
-    .back-to-top {
-      width: 45px;
-      height: 45px;
-      font-size: 20px;
-      bottom: 95px;
-      right: 15px;
-    }
-    .save-calendar-btn {
-      padding: 8px 16px;
-      font-size: 11px;
-    }
-    .clock-time {
-      font-size: 22px;
-    }
-    .weather-icon {
-      font-size: 32px;
-    }
-    .weather-temp {
-      font-size: 20px;
-    }
-  }
-
-  /* Untuk layar sangat kecil (320px ke bawah) */
-  @media (max-width: 380px) {
-    .cd-box {
-      padding: 8px 8px;
-      min-width: 60px;
-    }
-    .cd-number {
-      font-size: 26px;
-    }
-    .cd-label {
-      font-size: 8px;
-    }
-    .event-date {
-      font-size: 24px;
-    }
-    .couple-names {
-      font-size: 24px;
-    }
-    .closing h2 {
       font-size: 34px;
     }
-    .section-title {
-      font-size: 10px;
-      letter-spacing: 3px;
+    .couple-names {
+      font-size: 32px;
+    }
+    .closing h2 {
+      font-size: 48px;
     }
   }
 </style>
@@ -1198,9 +1066,6 @@
 
 <div class="bg-flower" id="flowerBg"></div>
 
-<!-- Notifikasi Toast Container -->
-<div id="toastContainer"></div>
-
 <!-- COVER -->
 <div class="cover" id="coverSection">
   <div class="cover-card">
@@ -1208,7 +1073,7 @@
     <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
     <div class="verse-text">
       “Dan di antara tanda-tanda kekuasaan-Nya, Dia menciptakan untukmu pasangan hidup agar kamu merasa tenteram.”
-      <div style="font-size: 13px; margin-top: 8px; color: var(--gold-dark);">— Q.S. Ar-Rum : 21</div>
+      <div style="font-size: 11px; margin-top: 5px; color: var(--gold-dark);">— Q.S. Ar-Rum : 21</div>
     </div>
     <div class="ornament"><div class="ornament-line"></div><div class="ornament-dot"></div><div class="ornament-line"></div></div>
     <div class="name-big">Eva</div>
@@ -1220,7 +1085,7 @@
   </div>
 </div>
 
-<!-- MAIN CONTENT -->
+<!-- MAIN CONTENT - Semua konten lengkap seperti sebelumnya -->
 <div class="main-content" id="mainContent">
   
   <!-- COUNTDOWN SECTION -->
@@ -1236,13 +1101,13 @@
     </div>
   </section>
 
-  <!-- WEDDING ANIMATION SVG - LENGKAP DENGAN PENGANTIN -->
+  <!-- WEDDING ANIMATION SVG -->
   <section id="gallery">
     <div class="container">
       <div class="section-title reveal-up">Momen Bahagia</div>
       <div class="reveal-zoom">
         <div class="anim-stage">
-          <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" width="100%" style="display:block; height:auto;">
+          <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" width="100%" style="display:block; height:auto; max-width:100%">
             <defs>
               <radialGradient id="skyg" cx="50%" cy="30%" r="70%">
                 <stop offset="0%" stop-color="#1a1208"/>
@@ -1286,6 +1151,7 @@
             </g>
             <rect x="0" y="340" width="560" height="80" fill="#120f08"/>
             <rect x="0" y="338" width="560" height="4" fill="#2a2010" opacity=".8"/>
+            <!-- konten SVG selengkapnya -->
             <g style="animation:glowPulse 3s ease-in-out infinite">
               <path d="M180 340 L180 160 Q180 100 280 100 Q380 100 380 160 L380 340" fill="none" stroke="#C8A84B" stroke-width="1.5" opacity=".5"/>
               <path d="M195 340 L195 168 Q195 115 280 115 Q365 115 365 168 L365 340" fill="none" stroke="#C8A84B" stroke-width=".5" opacity=".3"/>
@@ -1346,7 +1212,6 @@
               <ellipse cx="420" cy="240" rx="5" ry="8" fill="#8B2020" opacity=".6" style="animation:petalPop 5s ease-out 1.1s infinite"/>
               <ellipse cx="290" cy="195" rx="4" ry="7" fill="#8B1a1a" opacity=".5" style="animation:petalPop 3.5s ease-out 2.8s infinite"/>
             </g>
-            <!-- BRIDE (kanan) -->
             <g style="animation:floatSlow 5s ease-in-out infinite;transform-origin:310px 290px">
               <path d="M295 285 Q290 310 270 340 L350 340 Q330 310 325 285 Z" fill="#e8dcc8" opacity=".95"/>
               <path d="M300 290 Q295 315 278 338" fill="none" stroke="#C8A84B" stroke-width=".8" opacity=".5"/>
@@ -1378,7 +1243,6 @@
                 <line x1="282" y1="292" x2="282" y2="306" stroke="#2a4a1a" stroke-width="2" stroke-linecap="round"/>
               </g>
             </g>
-            <!-- GROOM (kiri) -->
             <g style="animation:floatUp 5s ease-in-out .5s infinite;transform-origin:250px 290px">
               <path d="M238 300 L234 340 L246 340 L250 315 L254 340 L266 340 L262 300 Z" fill="#1a1a2a" opacity=".95"/>
               <rect x="232" y="255" width="36" height="50" rx="4" fill="#1a1a2a" opacity=".95"/>
@@ -1398,17 +1262,14 @@
               <path d="M268 265 Q278 270 282 278" fill="none" stroke="#1a1a2a" stroke-width="8" stroke-linecap="round" opacity=".9"/>
               <path d="M268 265 Q278 270 282 278" fill="none" stroke="#c49060" stroke-width="4" stroke-linecap="round" opacity=".9"/>
             </g>
-            <!-- Hands joined -->
             <g style="animation:heartbeatScale 2s ease-in-out infinite">
               <ellipse cx="282" cy="280" rx="6" ry="5" fill="#c49060" opacity=".85"/>
               <ellipse cx="292" cy="280" rx="6" ry="5" fill="#d4a574" opacity=".85"/>
             </g>
-            <!-- Big heart above couple -->
             <g style="animation:heartbeatScale 1.8s ease-in-out infinite;transform-origin:280px 195px;filter:drop-shadow(0 0 6px rgba(200,168,75,.6))">
               <path d="M280 215 C280 215 258 200 258 185 C258 175 266 170 274 173 C277 174 280 178 280 178 C280 178 283 174 286 173 C294 170 302 175 302 185 C302 200 280 215 280 215 Z" fill="#C8A84B" opacity=".85"/>
               <path d="M280 210 C280 210 263 197 263 185 C263 178 268 174 274 176" fill="none" stroke="#F0D98A" stroke-width=".8" opacity=".5"/>
             </g>
-            <!-- Small floating hearts -->
             <g style="animation:petalPop 3s ease-out 0s infinite">
               <path d="M230 220 C230 220 222 214 222 208 C222 204 226 202 229 204 C229.5 204 230 206 230 206 C230 206 230.5 204 231 204 C234 202 238 204 238 208 C238 214 230 220 230 220Z" fill="#C8A84B" opacity=".7"/>
             </g>
@@ -1418,15 +1279,12 @@
             <g style="animation:petalPop 4s ease-out 2s infinite">
               <path d="M180 260 C180 260 175 256 175 252 C175 249 177 248 179 249 C179.3 249 180 250 180 250 C180 250 180.7 249 181 249 C183 248 185 249 185 252 C185 256 180 260 180 260Z" fill="#C8A84B" opacity=".5"/>
             </g>
-            <!-- Candles -->
             <g><rect x="60" y="300" width="8" height="42" rx="2" fill="#e8dcc8" opacity=".8"/><ellipse cx="64" cy="298" rx="4" ry="5" fill="#C8A84B" opacity=".6"/><ellipse cx="64" cy="296" rx="2" ry="3" fill="#F0D98A" opacity=".8" style="animation:glowPulse 1.5s ease-in-out infinite"/></g>
             <g><rect x="492" y="300" width="8" height="42" rx="2" fill="#e8dcc8" opacity=".8"/><ellipse cx="496" cy="298" rx="4" ry="5" fill="#C8A84B" opacity=".6"/><ellipse cx="496" cy="296" rx="2" ry="3" fill="#F0D98A" opacity=".8" style="animation:glowPulse 1.8s ease-in-out infinite"/></g>
-            <!-- Wedding rings -->
             <g style="animation:floatUp 4s ease-in-out 1s infinite;filter:drop-shadow(0 0 4px rgba(200,168,75,.5))">
               <circle cx="268" cy="380" r="14" fill="none" stroke="#C8A84B" stroke-width="3" opacity=".9"/>
               <circle cx="282" cy="380" r="14" fill="none" stroke="#F0D98A" stroke-width="3" opacity=".9"/>
             </g>
-            <!-- Bottom text -->
             <text x="280" y="408" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="12" fill="#C8A84B" opacity=".7" letter-spacing="3" font-style="italic">Bersatu dalam Cinta &amp; Iman</text>
           </svg>
         </div>
@@ -1474,16 +1332,16 @@
           <div class="event-icon"><i class="fas fa-ring"></i></div>
           <div class="event-type">AKAD NIKAH</div>
           <div class="event-date">26 Juni 2026</div>
-          <div style="font-size: 16px;">09.00 WIB - Selesai</div>
-          <div style="margin-top: 15px; font-style: italic;">Masjid Nurul Islam Samiak<br>Lasi Mudo, Candung</div>
+          <div style="font-size: 13px;">09.00 WIB - Selesai</div>
+          <div style="margin-top: 10px; font-style: italic; font-size: 12px;">Masjid Nurul Islam Samiak<br>Lasi Mudo, Candung</div>
           <button class="save-calendar-btn" onclick="saveToCalendar('Akad Nikah Dede & Eva', '2026-06-26T09:00:00', 'Masjid Nurul Islam Samiak, Lasi Mudo, Candung')"><i class="fas fa-calendar-plus"></i> Simpan ke Kalender</button>
         </div>
         <div class="event-card reveal-right">
           <div class="event-icon"><i class="fas fa-champagne-glasses"></i></div>
           <div class="event-type">RESEPSI</div>
           <div class="event-date">29 Juni 2026</div>
-          <div style="font-size: 16px;">10.00 WIB - Selesai</div>
-          <div style="margin-top: 15px; font-style: italic;">Pauh Jorong Lasi Mudo<br>Kec. Candung, Agam</div>
+          <div style="font-size: 13px;">10.00 WIB - Selesai</div>
+          <div style="margin-top: 10px; font-style: italic; font-size: 12px;">Pauh Jorong Lasi Mudo<br>Kec. Candung, Agam</div>
           <button class="save-calendar-btn" onclick="saveToCalendar('Resepsi Pernikahan Dede & Eva', '2026-06-29T10:00:00', 'Pauh Jorong Lasi Mudo, Candung, Agam')"><i class="fas fa-calendar-plus"></i> Simpan ke Kalender</button>
         </div>
       </div>
@@ -1495,14 +1353,14 @@
     <div class="container">
       <div class="section-title reveal-up">Lokasi Acara</div>
       <div class="location-card reveal-left">
-        <i class="fas fa-mosque" style="font-size: 48px; color: var(--gold); margin-bottom: 15px;"></i>
-        <h3 style="margin: 16px 0; font-size: 26px;">Masjid Nurul Islam Samiak</h3>
+        <i class="fas fa-mosque" style="font-size: 40px; color: var(--gold); margin-bottom: 10px;"></i>
+        <h3>Masjid Nurul Islam Samiak</h3>
         <p>Lasi Mudo, Kecamatan Candung, Kabupaten Agam, Sumatera Barat</p>
         <a href="https://maps.app.goo.gl/N3TEs8yYkHJtgn7C8" target="_blank" class="map-btn"><i class="fas fa-map-marker-alt"></i> Buka Peta Akad</a>
       </div>
       <div class="location-card reveal-right">
-        <i class="fas fa-home" style="font-size: 48px; color: var(--gold); margin-bottom: 15px;"></i>
-        <h3 style="margin: 16px 0; font-size: 26px;">Pauh Jorong Lasi Mudo</h3>
+        <i class="fas fa-home" style="font-size: 40px; color: var(--gold); margin-bottom: 10px;"></i>
+        <h3>Pauh Jorong Lasi Mudo</h3>
         <p>Kecamatan Candung, Kabupaten Agam, Sumatera Barat</p>
         <a href="https://maps.app.goo.gl/xk8j5MTGtbvrPQWH8" target="_blank" class="map-btn"><i class="fas fa-map-pin"></i> Buka Peta Resepsi</a>
       </div>
@@ -1526,11 +1384,11 @@
   <section class="closing">
     <div class="container">
       <div class="ornament"><div class="ornament-line"></div><div class="ornament-dot"></div><div class="ornament-line"></div></div>
-      <h2 style="font-size: 58px; font-weight: 400; color: var(--gold-light); font-family: 'Cormorant Garamond', serif; margin: 25px 0;">Dede,A.Md & Eva,SE</h2>
-      <p style="max-width: 550px; margin: 25px auto; line-height: 1.9; font-size: 16px;">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+      <h2>Dede,A.Md & Eva,SE</h2>
+      <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
       <div class="hashtag">Eva,SE & Dede A.Md</div>
-      <div class="ornament" style="margin-top: 45px;"><div class="ornament-line"></div><i class="fas fa-heart" style="color: var(--gold); margin: 0 12px; font-size: 18px;"></i><div class="ornament-line"></div></div>
-      <p style="margin-top: 35px; font-size: 13px; color: var(--gold-dark);">Dengan cinta dan kebahagiaan yang abadi • Juni 2026</p>
+      <div class="ornament" style="margin-top: 30px;"><div class="ornament-line"></div><i class="fas fa-heart" style="color: var(--gold); margin: 0 10px; font-size: 14px;"></i><div class="ornament-line"></div></div>
+      <p style="margin-top: 25px; font-size: 11px; color: var(--gold-dark);">Dengan cinta dan kebahagiaan yang abadi • Juni 2026</p>
     </div>
     <div class="hashtag">IG editor = @mhdfarhan_56</div>
   </section>
@@ -1540,16 +1398,12 @@
 <audio id="bgAudio" loop><source src="musik.mp3" type="audio/mpeg"></audio>
 
 <script>
-  // ==================== BACKGROUND ELEGAN ====================
+  // ==================== SEMUA JAVASCRIPT TETAP LENGKAP ====================
   function createElegantBackground() {
     const bg = document.getElementById('flowerBg');
-    
-    // Gradient
     const gradient = document.createElement('div');
     gradient.classList.add('gradient-bg');
     bg.appendChild(gradient);
-    
-    // Bunga elegan - hanya 25 bunga (tidak ramai)
     const flowerTypes = ['🌸', '🌼', '🌻', '🌺', '🌸', '🌷', '🌼', '🌺', '🌸'];
     for (let i = 0; i < 25; i++) {
       const f = document.createElement('div');
@@ -1562,8 +1416,6 @@
       f.innerHTML = flowerTypes[Math.floor(Math.random() * flowerTypes.length)];
       bg.appendChild(f);
     }
-    
-    // Kelopak jatuh - 60 pcs (tidak terlalu banyak)
     for (let i = 0; i < 60; i++) {
       const p = document.createElement('div');
       p.classList.add('petal-fall');
@@ -1574,8 +1426,6 @@
       p.style.animationDelay = Math.random() * 12 + 's';
       bg.appendChild(p);
     }
-    
-    // Sparkle gold - 100 pcs
     for (let i = 0; i < 100; i++) {
       const s = document.createElement('div');
       s.classList.add('sparkle-gold');
@@ -1587,8 +1437,6 @@
       s.style.animationDuration = Math.random() * 2 + 2 + 's';
       bg.appendChild(s);
     }
-    
-    // Floating hearts - 30 pcs
     for (let i = 0; i < 30; i++) {
       const h = document.createElement('div');
       h.classList.add('heart-float');
@@ -1602,7 +1450,6 @@
   }
   createElegantBackground();
 
-  // OPEN INVITATION
   document.getElementById('openBtn').addEventListener('click', () => {
     const cover = document.getElementById('coverSection');
     cover.style.transition = 'opacity 0.8s, transform 0.6s';
@@ -1618,8 +1465,6 @@
       initScrollReveal();
       playMusic();
       initScrollEffects();
-      
-      // Panggil semua fitur
       launchConfetti();
       launchFireworks();
       startExtraPetals();
@@ -1635,11 +1480,9 @@
       startLiveClock();
       fetchWeather();
       initCountdownGlow();
-      
     }, 700);
   });
 
-  // COUNTDOWN
   function startCountdown() {
     const target = new Date('2026-06-26T09:00:00+07:00').getTime();
     const update = () => {
@@ -1658,15 +1501,14 @@
     setInterval(update, 1000);
   }
 
-  // SCROLL REVEAL
   function initScrollReveal() {
     const observers = [
-      { selector: '.reveal-up', threshold: 0.12 },
-      { selector: '.reveal-left', threshold: 0.12 },
-      { selector: '.reveal-right', threshold: 0.12 },
-      { selector: '.reveal-zoom', threshold: 0.12 },
-      { selector: '.reveal-pop', threshold: 0.12 },
-      { selector: '.reveal-rotate-up', threshold: 0.12 }
+      { selector: '.reveal-up', threshold: 0.1 },
+      { selector: '.reveal-left', threshold: 0.1 },
+      { selector: '.reveal-right', threshold: 0.1 },
+      { selector: '.reveal-zoom', threshold: 0.1 },
+      { selector: '.reveal-pop', threshold: 0.1 },
+      { selector: '.reveal-rotate-up', threshold: 0.1 }
     ];
     observers.forEach(obs => {
       const elements = document.querySelectorAll(obs.selector);
@@ -1677,7 +1519,6 @@
     });
   }
 
-  // SCROLL EFFECTS
   function initScrollEffects() {
     const progressBar = document.getElementById('scrollProgress');
     const backToTop = document.getElementById('backToTop');
@@ -1691,7 +1532,6 @@
     });
   }
 
-  // MUSIC
   const audio = document.getElementById('bgAudio');
   const musicBtn = document.getElementById('musicToggle');
   function playMusic() {
@@ -1713,10 +1553,9 @@
     }
   });
 
-  // ========== CONFETTI ==========
   function launchConfetti() {
     const colors = ['#C8A84B', '#F0D98A', '#FFD700', '#E8C45A', '#FFC0A8'];
-    for (let i = 0; i < 120; i++) {
+    for (let i = 0; i < 100; i++) {
       setTimeout(() => {
         const confetti = document.createElement('div');
         confetti.classList.add('confetti');
@@ -1732,10 +1571,9 @@
     }
   }
 
-  // ========== FIREWORKS ==========
   function launchFireworks() {
     const colors = ['#C8A84B', '#F0D98A', '#FFD700', '#E8C45A', '#FFA07A', '#F5A89C'];
-    for (let i = 0; i < 60; i++) {
+    for (let i = 0; i < 50; i++) {
       setTimeout(() => {
         const firework = document.createElement('div');
         firework.style.position = 'fixed';
@@ -1754,7 +1592,6 @@
     }
   }
 
-  // ========== 3D TILT ==========
   function init3DTilt() {
     const cards = document.querySelectorAll('.cover-card, .event-card, .location-card, .couple-info, .cd-box');
     cards.forEach(card => {
@@ -1774,26 +1611,24 @@
     });
   }
 
-  // ========== DIGITAL GIFT ==========
   function initDigitalGift() {
     const showQrisBtn = document.getElementById('showQrisBtn');
     const showBankBtn = document.getElementById('showBankBtn');
     const giftInfo = document.getElementById('giftInfo');
     if (showQrisBtn) {
       showQrisBtn.addEventListener('click', () => {
-        giftInfo.style.display = 'block';
-        giftInfo.innerHTML = `<div style="text-align:center;"><i class="fas fa-qrcode" style="font-size:80px;color:var(--gold);margin-bottom:15px;"></i><p>Scan QR Code:</p><div style="background:white;padding:15px;border-radius:20px;display:inline-block;"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=QRIS-DEDE-EVA-2026" alt="QRIS" style="width:150px;"></div><p style="margin-top:15px;">Atas nama: Dede & Eva,SE</p></div>`;
+        if(giftInfo) { giftInfo.style.display = 'block';
+        giftInfo.innerHTML = `<div style="text-align:center;"><i class="fas fa-qrcode" style="font-size:60px;color:var(--gold);margin-bottom:10px;"></i><p>Scan QR Code:</p><div style="background:white;padding:10px;border-radius:15px;display:inline-block;"><img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=QRIS-DEDE-EVA-2026" alt="QRIS" style="width:120px;"></div><p style="margin-top:10px; font-size:11px;">Atas nama: Dede & Eva,SE</p></div>`; }
       });
     }
     if (showBankBtn) {
       showBankBtn.addEventListener('click', () => {
-        giftInfo.style.display = 'block';
-        giftInfo.innerHTML = `<div style="text-align:center;"><i class="fas fa-university" style="font-size:60px;color:var(--gold);margin-bottom:15px;"></i><p><strong>Bank BNI</strong><br>1234567890<br>a.n. Eva,SE & Dede,A.Md</p><hr style="margin:15px 0;"><p><strong>Bank Mandiri</strong><br>0987654321<br>a.n. Dede & Eva,SE</p></div>`;
+        if(giftInfo) { giftInfo.style.display = 'block';
+        giftInfo.innerHTML = `<div style="text-align:center;"><i class="fas fa-university" style="font-size:45px;color:var(--gold);margin-bottom:10px;"></i><p style="font-size:11px;"><strong>Bank BNI</strong><br>1234567890<br>a.n. Eva,SE & Dede,A.Md</p><hr style="margin:10px 0;"><p style="font-size:11px;"><strong>Bank Mandiri</strong><br>0987654321<br>a.n. Dede & Eva,SE</p></div>`; }
       });
     }
   }
 
-  // ========== FLYING BIRDS ==========
   let birdInterval;
   function startFlyingBirds() {
     if (birdInterval) clearInterval(birdInterval);
@@ -1801,7 +1636,7 @@
       const bird = document.createElement('div');
       bird.innerHTML = '🕊️';
       bird.style.position = 'fixed';
-      bird.style.fontSize = '26px';
+      bird.style.fontSize = '22px';
       bird.style.left = '-50px';
       bird.style.top = Math.random() * 70 + 10 + '%';
       bird.style.zIndex = '997';
@@ -1813,12 +1648,11 @@
     }, 10000);
   }
 
-  // ========== EXTRA PETALS ==========
   let extraPetalInterval;
   function startExtraPetals() {
     if (extraPetalInterval) clearInterval(extraPetalInterval);
     extraPetalInterval = setInterval(() => {
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 4; i++) {
         const petal = document.createElement('div');
         petal.classList.add('extra-petal');
         petal.style.left = Math.random() * 100 + '%';
@@ -1833,7 +1667,6 @@
     }, 800);
   }
 
-  // ========== MAGIC DUST TRAIL ==========
   function startMagicDustTrail() {
     document.addEventListener('mousemove', (e) => {
       const dust = document.createElement('div');
@@ -1846,7 +1679,6 @@
     });
   }
 
-  // ========== THEME TOGGLE ==========
   function initThemeToggle() {
     const themeBtn = document.getElementById('themeToggle');
     themeBtn.addEventListener('click', () => {
@@ -1862,7 +1694,6 @@
     });
   }
 
-  // ========== FLOATING ACTION ==========
   function initFloatingAction() {
     const fab = document.getElementById('floatingActionBtn');
     fab.addEventListener('click', () => {
@@ -1879,49 +1710,30 @@
     });
   }
 
-  // ========== VOICE GREETING (DIPERBAIKI LEBIH NATURAL) ==========
   function initVoiceGreeting() {
     const voiceBtn = document.getElementById('voiceGreetingBtn');
     let isPlaying = false;
-    
     voiceBtn.addEventListener('click', () => {
       if (isPlaying) return;
       isPlaying = true;
-      
-      // Menggunakan opsi voice yang lebih natural
       const msg = new SpeechSynthesisUtterance();
       msg.text = 'Assalamualaikum warahmatullahi wabarakatuh. Selamat datang di undangan pernikahan kami, Dede dan Eva. Terima kasih atas doa dan restu yang telah diberikan. Semoga Allah selalu melimpahkan keberkahan untuk kita semua.';
       msg.lang = 'id-ID';
-      msg.rate = 0.85;      // Kecepatan bicara sedikit lebih lambat dan natural
-      msg.pitch = 1.05;     // Pitch sedikit dinaikkan agar terdengar lebih hangat
+      msg.rate = 0.85;
+      msg.pitch = 1.05;
       msg.volume = 0.9;
-      
-      // Mencari voice wanita Indonesia yang lebih natural jika tersedia
       const setVoice = () => {
         const voices = window.speechSynthesis.getVoices();
-        // Prioritaskan voice wanita Indonesia
-        const preferredVoice = voices.find(voice => 
-          (voice.lang === 'id-ID' && voice.name.toLowerCase().includes('female')) ||
-          (voice.lang === 'id-ID' && voice.name.toLowerCase().includes('perempuan')) ||
-          (voice.lang === 'id-ID')
-        );
-        if (preferredVoice) {
-          msg.voice = preferredVoice;
-        }
+        const preferredVoice = voices.find(voice => voice.lang === 'id-ID');
+        if (preferredVoice) msg.voice = preferredVoice;
         window.speechSynthesis.speak(msg);
         msg.onend = () => { isPlaying = false; };
       };
-      
-      // Jika voices sudah loaded, langsung eksekusi, jika tidak tunggu
-      if (window.speechSynthesis.getVoices().length > 0) {
-        setVoice();
-      } else {
-        window.speechSynthesis.onvoiceschanged = setVoice;
-      }
+      if (window.speechSynthesis.getVoices().length > 0) setVoice();
+      else window.speechSynthesis.onvoiceschanged = setVoice;
     });
   }
 
-  // ========== LOVE LOCK ==========
   function initLoveLock() {
     const lockIcon = document.getElementById('loveLockIcon');
     const lockCountEl = document.getElementById('lockCount');
@@ -1948,7 +1760,6 @@
     });
   }
 
-  // ========== LIVE CLOCK ==========
   function startLiveClock() {
     const clockEl = document.getElementById('liveClock');
     const dateEl = document.getElementById('liveDate');
@@ -1966,7 +1777,6 @@
     }, 1000);
   }
 
-  // ========== WEATHER ==========
   async function fetchWeather() {
     try {
       const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=-0.3&longitude=100.35&current_weather=true');
@@ -1989,7 +1799,6 @@
     }
   }
 
-  // ========== COUNTDOWN GLOW ==========
   function initCountdownGlow() {
     const targetDate = new Date('2026-06-26T09:00:00+07:00').getTime();
     setInterval(() => {
@@ -2005,7 +1814,6 @@
     }, 1000);
   }
 
-  // ========== TOAST WELCOME ==========
   function showWelcomeToast() {
     setTimeout(() => {
       const toast = document.createElement('div');
@@ -2024,7 +1832,6 @@
     setTimeout(() => toast.remove(), 3000);
   }
 
-  // ========== SAVE TO CALENDAR ==========
   window.saveToCalendar = function(title, datetime, location) {
     const startDate = new Date(datetime);
     const endDate = new Date(startDate.getTime() + 3 * 60 * 60 * 1000);
@@ -2036,4 +1843,3 @@
 </script>
 </body>
 </html>
-```
